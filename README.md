@@ -6,5 +6,5 @@
 `ln -s /home/USERNAME/dottmux/tmux.conf /home/USERNAME/.tmux.conf`
 
 3. update the conf file from tmux  
-`tmux  `
+`tmux`  
 `tmux source ~/.tmux.conf`
