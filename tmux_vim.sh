@@ -10,7 +10,7 @@ tmux -2 new-session -d -s $SESSION
 tmux new-window -t $SESSION:0 -n 'LocalPC'
 tmux split-window -v
 tmux select-pane -t 1
-tmux resize-pane -D 20
+tmux resize-pane -D 17 
 tmux select-pane -t 0
 
 # ssh to ngbs
