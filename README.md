@@ -35,3 +35,36 @@ Resize pane: <kbd>ctrl</kbd> + <kbd>a</kbd> then use arrow keys (up/down)
 
 ### vim  
 <leader>nv  # goto bash mode  
+
+### Example tmux script  
+#!/bin/bash
+```
+SESSION=$USER
+
+# start a new tmux session
+tmux -2 new-session -d -s $SESSION
+
+# session one normal bash window on local PC
+tmux new-window -t $SESSION:0 -n 'LocalPC'
+
+# ssh to ngbs
+tmux new-window -t $SESSION:1 -n 'NgBS'
+tmux send-keys "sshngbs" C-m
+
+
+#tmux split-window -h
+#tmux select-pane -t 0
+# use -f to keep this live ie streaming content
+#tmux send-keys "tail /var/mail/dwheeler" C-m
+# now the next pane
+#tmux select-pane -t 1
+#tmux send-keys "echo 'hello1'" C-m
+#tmux split-window -v
+#tmux resize-pane -D 20
+#tmux send-keys "echo 'hello2'" C-m
+# Set default window
+tmux select-window -t $SESSION:0
+
+# Attach to session
+tmux -2 attach-session -t $SESSION
+```
