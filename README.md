@@ -8,3 +8,15 @@
 3. update the conf file from tmux  
 `tmux`  
 `tmux source ~/.tmux.conf`
+
+### shortcuts  
+prefix: <kbd>ctrl</kbd> + <kbd>a</kbd>  
+prefix: <kbd>ctrl</kbd> + <kbd>a</kbd>  
+prefix: <kbd>ctrl</kbd> + <kbd>a</kbd>  
+prefix: <kbd>ctrl</kbd> + <kbd>a</kbd>  
+prefix: <kbd>ctrl</kbd> + <kbd>a</kbd>  
+prefix: <kbd>ctrl</kbd> + <kbd>a</kbd>  
+prefix: <kbd>ctrl</kbd> + <kbd>a</kbd>  
+prefix: <kbd>ctrl</kbd> + <kbd>a</kbd>  
+prefix: <kbd>ctrl</kbd> + <kbd>a</kbd>  
+prefix: <kbd>ctrl</kbd> + <kbd>a</kbd>  
