@@ -10,12 +10,12 @@
 `tmux source ~/.tmux.conf`  
 
 ###  command  
-`tmux kill-server`  # exits everything!  
+`tmux kill-server  # exits everything!`  
 `tmux kill-session -t <myname>`  
 `tmux new -s <myname>`  
-detach current session: <kbd>ctrl</kbd> + <kbd>a</kbd> then <kbd>d</kbd>  
+<kbd>ctrl</kbd> + <kbd>a</kbd> then <kbd>d</kbd> `detach current session`   
 `tmux ls`  
-`tmux attach -t <myname>`  # reattach to myanme ie -t dwheeler for scripts   
+`tmux attach -t <myname>  # reattach to myanme ie -t dwheeler for scripts`   
 `tmux list-commands`  
 `tmux list-keys`  
 
@@ -36,12 +36,12 @@ move between windows: <kbd>ctrl</kbd> + <kbd>a</kbd> then <kbd>1</kbd> <kbd>2</k
 Zoom pane: <kbd>ctrl</kbd> + <kbd>a</kbd> then <kbd>z</kbd>  
 Resize pane: <kbd>ctrl</kbd> + <kbd>a</kbd> then use arrow keys (up/down)   
 
-### vim  
-<leader>nv  # goto bash mode  
+### In vim run shell commands using vimux  
+<kbd>,</kbd> + <kbd>n</kbd> + <kbd>v</kbd>  
 
 ### Example tmux script  
-#!/bin/bash
 ```
+#!/bin/bash
 SESSION=$USER
 
 # start a new tmux session
