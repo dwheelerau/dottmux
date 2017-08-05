@@ -10,9 +10,12 @@
 `tmux source ~/.tmux.conf`  
 
 ###  command  
-`tmux kill-server`  
-`tmux new -s myname`  
-`tmux a -t myname`  # attach to myanme   
+`tmux kill-server`  # exits everything!  
+`tmux kill-session -t <myname>`  
+`tmux new -s <myname>`  
+detach current session: <kbd>ctrl</kbd> + <kbd>a</kbd> then <kbd>d</kbd>  
+`tmux ls`  
+`tmux attach -t <myname>`  # reattach to myanme ie -t dwheeler for scripts   
 `tmux list-commands`  
 `tmux list-keys`  
 
