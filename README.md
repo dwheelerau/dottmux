@@ -10,11 +10,11 @@
 `tmux source ~/.tmux.conf`  
 
 ###  command  
-tmux kill-server
-tmux new -s myname  
-tmux a -t myname  # attach to myanme   
-tmux list-commands 
-tmux list-keys  
+`tmux kill-server`  
+`tmux new -s myname`  
+`tmux a -t myname`  # attach to myanme   
+`tmux list-commands`  
+`tmux list-keys`  
 
 ### shortcuts  
 prefix: <kbd>ctrl</kbd> + <kbd>a</kbd>  
