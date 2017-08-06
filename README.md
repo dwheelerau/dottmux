@@ -12,6 +12,7 @@
 ###  command  
 `tmux kill-server  # exits everything!`  
 `tmux kill-session -t <myname>`  
+`tmux kill-window -t <windowNumber>`  
 `tmux new -s <myname>`  
 <kbd>ctrl</kbd> + <kbd>a</kbd> then <kbd>d</kbd> `detach current session`   
 `tmux ls`  
