@@ -36,10 +36,5 @@ tmux select-pane -t 0
 tmux select-window -t $SESSION:0
 tmux send-keys "vim" C-m
 
-# if path passed open in that path and attach session
-if [ "$#" -eq 1 ]; then
-  echo "changing to $1"
-  tmux -2 attach-session -t $SESSION -c $1
-else
-  tmux -2 attach-session -t $SESSION
-fi
+# start session and change to the current directory
+tmux -2 attach-session -t $SESSION -c $PWD

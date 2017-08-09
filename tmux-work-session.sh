@@ -40,5 +40,5 @@ tmux select-pane -t 0
 # Set default window
 tmux select-window -t $SESSION:0
 
-# Attach to session
-tmux -2 attach-session -t $SESSION
+# Attach to session and change to current directory
+tmux -2 attach-session -t $SESSION -c $PWD
