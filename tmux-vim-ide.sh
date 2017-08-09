@@ -2,9 +2,10 @@
 
 SESSION=$USER
 
-#if ["$#" -eq 1]; then
-#  tmux send-keys "cd $1"
-#fi
+# if path passed open in that path
+if ["$#" -eq 2]; then
+  tmux send-keys "cd $1"
+fi
 
 # start a new tmux session
 tmux -2 new-session -d -s $SESSION
