@@ -2,10 +2,6 @@
 
 SESSION=$USER
 
-# if path passed open in that path
-if ["$#" -eq 1]; then
-  tmux send-keys "cd $1" C-m
-fi
 
 # start a new tmux session
 tmux -2 new-session -d -s $SESSION
@@ -40,5 +36,10 @@ tmux select-pane -t 0
 tmux select-window -t $SESSION:0
 tmux send-keys "vim" C-m
 
-# Attach to session
-tmux -2 attach-session -t $SESSION
+# if path passed open in that path and attach session
+if [ "$#" -eq 1 ]; then
+  echo "changing to $1"
+  tmux -2 attach-session -t $SESSION -c $1
+else
+  tmux -2 attach-session -t $SESSION
+fi
