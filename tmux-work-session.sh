@@ -17,8 +17,7 @@ tmux select-pane -t 1
 tmux resize-pane -D 17
 tmux select-pane -t 0
 
-
-# ssh to ngbs
+# ssh to nzgl
 tmux new-window -t $SESSION:2 -n 'NZGL-server'
 tmux send-keys "sshnzgl" C-m
 tmux split-window -v
