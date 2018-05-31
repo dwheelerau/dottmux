@@ -21,6 +21,7 @@ tmux new-window -t $SESSION:1 -n 'winsplit'
 tmux split-window -h
 
 tmux select-window -t $SESSION:0
+tmux select-pane -t 0
 #tmux select-pane -t 1
 # ssh to ngbs
 #tmux new-window -t $SESSION:1 -n 'NgBS-server'
