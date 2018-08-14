@@ -14,6 +14,10 @@ tmux select-pane -t 1
 tmux resize-pane -D 17 
 tmux select-pane -t 0
 
+# create a split upper window for duel vim sessions
+
+#tmux select-pane -t 0
+#tmux split-window -h
 # ssh to ngbs
 #tmux new-window -t $SESSION:1 -n 'NgBS'
 #tmux send-keys "sshngbs" C-m
@@ -34,7 +38,8 @@ tmux select-pane -t 0
 #tmux send-keys "echo 'hello2'" C-m
 # Set default window
 tmux select-window -t $SESSION:0
-tmux send-keys "vim" C-m
+tmux split-window -h
+#tmux send-keys "vim" C-m
 
 # start session and change to the current directory
 tmux -2 attach-session -t $SESSION -c $PWD
