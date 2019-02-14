@@ -39,6 +39,7 @@ tmux select-pane -t 0
 # Set default window
 tmux select-window -t $SESSION:0
 tmux split-window -h
+tmux send-keys "echo '**use: view filename, to avoid potential overwrite in vim**'" C-m
 #tmux send-keys "vim" C-m
 
 # start session and change to the current directory
